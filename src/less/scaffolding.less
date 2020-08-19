@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'AdobeGothic';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/AdobeGothicStd-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Calibri';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/calibri.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Calibri';
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  src: url('../fonts/calibrii.ttf') format('ttf');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+
+  min-width: 320px;
+  margin: 0 auto;
+
+  font-family: 'AdobeGothic', 'Arial', 'Helvetica', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: @darkblue-color;
+  background-color: @bg-color;
+
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

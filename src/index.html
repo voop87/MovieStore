@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Movie Store</title>
+</head>
+<body>
+  <header class="header">
+    <section class="header__top">
+      <h1 class="header__title visually-hidden">Movie Store - the best movie storage</h1>
+      <div class="container">
+        <div class="header__logo">
+          <img class="header__logo-img" src="#" alt="Logotype" width="115" height="17">
+        </div>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Comics</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active">Movies</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Video</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Game</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">TV</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">More</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user user">
+          <img class="user__img user__img--new-messages" src="#" alt="User photo">
+          <span class="user__name">Carol Danvers</span>
+          <a class="user__edit" href="#">Edit profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="header__bottom banner">
+      <div class="banner__slider slider">
+        <div class="slider__wrapper">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <img class="slider__img" src="#" alt="Movie poster">
+            </li>
+            <li class="slider__item">
+              <img class="slider__img slider__img--active" src="#" alt="Movie poster">
+            </li>
+            <li class="slider__item">
+              <img class="slider__img" src="#" alt="Movie poster">
+            </li>
+            <li class="slider__item">
+              <img class="slider__img" src="#" alt="Movie poster">
+            </li>
+          </ul>
+        </div>
+        <div class="slider__dots">
+          <ul class="slider__dots-list">
+            <li class="slider__dots-item">ADDWA</li>
+            <li class="slider__dots-item slider__dots-item--active">James Gunn</li>
+            <li class="slider__dots-item">GEG</li>
+            <li class="slider__dots-item">ADadgewwd</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="banner__title visually-hidden">Guardians of the Galaxy</h2>
+      <img class="banner__title-img" src="#" alt="Guardians of the Galaxy">
+      <button class="banner__btn" type="button">Watch now</button>
+      <footer class="banner__footer">
+        <div class="container">
+          <dl class="banner__movie-info banner-info">
+            <dt class="banner-info__title banner-info__title--published">Published</dt>
+            <dd class="banner-info__desc banner-info__desc--published">feb 20, 2014</dd>
+            <dt class="banner-info__title banner-info__title--updated">Updated</dt>
+            <dd class="banner-info__desc banner-info__desc--updated">feb 20, 2014</dd>
+            <dt class="banner-info__title banner-info__title--rating">Rating</dt>
+            <dd class="banner-info__desc banner-info__desc--rating">4</dd>
+          </dl>
+          <dl class="banner__movie-stats banner-stats">
+            <dt class="banner-stats__title banner-stats__title--likes">likes</dt>
+            <dd class="banner-stats__desc banner-stats__desc--likes">2,548</dd>
+            <dt class="banner-stats__title banner-stats__title--comments">comments</dt>
+            <dd class="banner-stats__desc banner-stats__desc--comments">21</dd>
+            <dt class="banner-stats__title banner-stats__title--downloads">downloads</dt>
+            <dd class="banner-stats__desc banner-stats__desc--downloads">564</dd>
+          </dl>
+        </div>
+      </footer>
+    </section>
+  </header>
+
+  <main class="main">
+    <section class="main__section movies">
+      <header class="movies__header">
+        <h2 class="movies__title">Featured Movies</h2>
+        <div class="movies__filters">
+          <a class="movies__filter-link" href="#">New Realised</a>
+          <a class="movies__filter-link movies__filter-link--active">Trailers &amp; Clips</a>
+        </div>
+        <form class="movies__search-form">
+          <div class="movies__search">
+            <input class="movies__search-input" type="search" placeholder="Search...">
+            <button class="movies__search-btn" type="submit">Search</button>
+          </div>
+        </form>
+      </header>
+      <div class="movies__content">
+        <ul class="movies__list trailers">
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--download">
+              <img class="movie-card__image" src="#" alt="Movie poster">
+              <div class="movie-card__inner">
+                <div class="movie-card__statistic">
+                  <dl class="movie-card__stats">
+                    <dt class="movie-card__stats-title movie-card__stats-title--likes">likes</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--likes">3,542</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--comments">comments</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--comments">100</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--downloads">downloads</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--downloads">100</dd>
+                  </dl>
+                  <dl class="movie-card__info">
+                    <dt class="movie-card__info-title movie-card__info-title--rating">rating</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--rating">4</dd>
+                    <dt class="movie-card__info-title movie-card__info-title--published">published</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--published">feb 20, 2014</dd>
+                  </dl>
+                </div>
+                <button class="movie-card__btn movie-card__btn--download">download</button>
+              </div>
+              <h3 class="movie-card__title">Guardians of the Galaxy</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--watch">
+              <img class="movie-card__image" src="#" alt="Movie poster">
+              <div class="movie-card__inner">
+                <div class="movie-card__statistic">
+                  <dl class="movie-card__stats">
+                    <dt class="movie-card__stats-title movie-card__stats-title--likes">likes</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--likes">4,681</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--comments">comments</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--comments">58</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--downloads">downloads</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--downloads">642</dd>
+                  </dl>
+                  <dl class="movie-card__info">
+                    <dt class="movie-card__info-title movie-card__info-title--rating">rating</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--rating">4</dd>
+                    <dt class="movie-card__info-title movie-card__info-title--published">Release date</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--published">may 03, 2013</dd>
+                  </dl>
+                </div>
+                <button class="movie-card__btn movie-card__btn--watch">watch</button>
+              </div>
+              <h3 class="movie-card__title">Iron Man 3</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--download">
+              <img class="movie-card__image" src="#" alt="Movie poster">
+              <div class="movie-card__inner">
+                <div class="movie-card__statistic">
+                  <dl class="movie-card__stats">
+                    <dt class="movie-card__stats-title movie-card__stats-title--likes">likes</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--likes">2,248</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--comments">comments</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--comments">100</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--downloads">downloads</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--downloads">100</dd>
+                  </dl>
+                  <dl class="movie-card__info">
+                    <dt class="movie-card__info-title movie-card__info-title--rating">rating</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--rating">3</dd>
+                    <dt class="movie-card__info-title movie-card__info-title--published">Release date</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--published">feb 20, 2013</dd>
+                  </dl>
+                </div>
+                <button class="movie-card__btn movie-card__btn--download">download</button>
+              </div>
+              <h3 class="movie-card__title">Captain America</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--download">
+              <img class="movie-card__image" src="#" alt="Movie poster">
+              <div class="movie-card__inner">
+                <div class="movie-card__statistic">
+                  <dl class="movie-card__stats">
+                    <dt class="movie-card__stats-title movie-card__stats-title--likes">likes</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--likes">2,951</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--comments">comments</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--comments">99</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--downloads">downloads</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--downloads">99</dd>
+                  </dl>
+                  <dl class="movie-card__info">
+                    <dt class="movie-card__info-title movie-card__info-title--rating">rating</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--rating">3</dd>
+                    <dt class="movie-card__info-title movie-card__info-title--published">Release date</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--published">feb 20, 2013</dd>
+                  </dl>
+                </div>
+                <button class="movie-card__btn movie-card__btn--download"></button>
+              </div>
+              <h3 class="movie-card__title">The Amazing Spider-Man 2</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--download">
+              <img class="movie-card__image" src="#" alt="Movie poster">
+              <div class="movie-card__inner">
+                <div class="movie-card__statistic">
+                  <dl class="movie-card__stats">
+                    <dt class="movie-card__stats-title movie-card__stats-title--likes">likes</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--likes">3,248</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--comments">comments</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--comments">99</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--downloads">downloads</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--downloads">99</dd>
+                  </dl>
+                  <dl class="movie-card__info">
+                    <dt class="movie-card__info-title movie-card__info-title--rating">rating</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--rating">4</dd>
+                    <dt class="movie-card__info-title movie-card__info-title--published">Release date</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--published">feb 20, 2015</dd>
+                  </dl>
+                </div>
+                <button class="movie-card__btn movie-card__btn--download"></button>
+              </div>
+              <h3 class="movie-card__title">The Incredible Hulk</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--download">
+              <img class="movie-card__image" src="#" alt="Movie poster">
+              <div class="movie-card__inner">
+                <div class="movie-card__statistic">
+                  <dl class="movie-card__stats">
+                    <dt class="movie-card__stats-title movie-card__stats-title--likes">likes</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--likes">3,234</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--comments">comments</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--comments">150</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--downloads">downloads</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--downloads">150</dd>
+                  </dl>
+                  <dl class="movie-card__info">
+                    <dt class="movie-card__info-title movie-card__info-title--rating">rating</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--rating">5</dd>
+                    <dt class="movie-card__info-title movie-card__info-title--published">Release date</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--published">feb 26, 2016</dd>
+                  </dl>
+                </div>
+                <button class="movie-card__btn movie-card__btn--download"></button>
+              </div>
+              <h3 class="movie-card__title">The Avengers</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--player">
+              <div class="movie-card__video-container">
+                <video class="movie-card__video" src="#">
+
+                </video>
+                <button class="movie-card__btn movie-card__btn--download"></button>
+              </div>
+              <h3 class="movie-card__title visually-hidden">Thor - The Dark World</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--watch">
+              <img class="movie-card__image" src="#" alt="Movie poster">
+              <div class="movie-card__inner">
+                <div class="movie-card__statistic">
+                  <dl class="movie-card__stats">
+                    <dt class="movie-card__stats-title movie-card__stats-title--likes">likes</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--likes">4,681</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--comments">comments</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--comments">58</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--downloads">downloads</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--downloads">156</dd>
+                  </dl>
+                  <dl class="movie-card__info">
+                    <dt class="movie-card__info-title movie-card__info-title--rating">rating</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--rating">3</dd>
+                    <dt class="movie-card__info-title movie-card__info-title--published">Release date</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--published">jul 26, 2013</dd>
+                  </dl>
+                </div>
+                <button class="movie-card__btn movie-card__btn--watch"></button>
+              </div>
+              <h3 class="movie-card__title">Wolverine</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--player">
+              <div class="movie-card__video-container">
+                <video class="movie-card__video" src="#">
+
+                </video>
+                <button class="movie-card__btn movie-card__btn--download"></button>
+              </div>
+              <h3 class="movie-card__title visually-hidden">X-Men 3</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--watch">
+              <img class="movie-card__image" src="#" alt="Movie poster">
+              <div class="movie-card__inner">
+                <div class="movie-card__statistic">
+                  <dl class="movie-card__stats">
+                    <dt class="movie-card__stats-title movie-card__stats-title--likes">likes</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--likes">6,875</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--comments">comments</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--comments">214</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--downloads">downloads</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--downloads">324</dd>
+                  </dl>
+                  <dl class="movie-card__info">
+                    <dt class="movie-card__info-title movie-card__info-title--rating">rating</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--rating">4</dd>
+                    <dt class="movie-card__info-title movie-card__info-title--published">Release date</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--published">jul 26, 2014</dd>
+                  </dl>
+                </div>
+                <button class="movie-card__btn movie-card__btn--watch"></button>
+              </div>
+              <h3 class="movie-card__title">Wolverine 2</h3>
+            </div>
+          </li>
+          <li class="movies__list-item">
+            <div class="movie-card movie-card--download">
+              <img class="movie-card__image" src="#" alt="Movie poster">
+              <div class="movie-card__inner">
+                <div class="movie-card__statistic">
+                  <dl class="movie-card__stats">
+                    <dt class="movie-card__stats-title movie-card__stats-title--likes">likes</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--likes">100</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--comments">comments</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--comments">0</dd>
+                    <dt class="movie-card__stats-title movie-card__stats-title--downloads">downloads</dt>
+                    <dd class="movie-card__stats-desc movie-card__stats-desc--downloads">0</dd>
+                  </dl>
+                  <dl class="movie-card__info">
+                    <dt class="movie-card__info-title movie-card__info-title--rating">rating</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--rating">2</dd>
+                    <dt class="movie-card__info-title movie-card__info-title--published">Release date</dt>
+                    <dd class="movie-card__info-desc movie-card__info-desc--published">aug 15, 2015</dd>
+                  </dl>
+                </div>
+                <button class="movie-card__btn movie-card__btn--download"></button>
+              </div>
+              <h3 class="movie-card__title">The Amazing Spider-Man</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-download">
+    <div class="container">
+      <div class="modal-download__info">
+        <span class="modal-download__desc">Downloading -</span>
+        <span class="modal-download__title"></span>
+        <span class="modal-download__status"></span>
+      </div>
+      <ul class="modal-download__actions-list">
+        <li class="modal-download__actions-item">
+          <button class="modal-download__action modal-download__action--delete">delete</button>
+        </li>
+        <li class="modal-download__actions-item">
+          <button class="modal-download__action modal-download__action--reload">reload</button>
+        </li>
+        <li class="modal-download__actions-item">
+          <button class="modal-download__action modal-download__action--cancel">cancel</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
